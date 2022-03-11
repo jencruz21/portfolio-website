@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+li {
+	background-color: white;
+	transition: 1s;
+}
+
+li:hover {
+	background-color: whitesmoke;
+	border-radius: 5px;
+	padding: 0 70px;
+}
+
+.container-font {
+	font-family: 'PT Sans Caption', sans-serif;
+  	font-size: 55px;
+  	background: #16BFFD;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	cursor: pointer;
+}
+
+.avatar {
+	width: 435px;
+	height: 425px;
+	border-radius: 100%;
+}
+
+.nav-bg {
+	background: #2c3e50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-transition {
+	background: #00416A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FFF, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FFF, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.textarea-h {
+	height: 200px;
+}
+
+.skill-icon {
+	width: 175px;
+	height: 175px;
+	transition: 1s;
+}
+
+@media only screen and (max-width: 500px) {
+	.avatar {
+		width: 22em;
+		height: 22em;
+		margin-top: 2em;
+	}
+
+	.skill-icon {
+		width: 275px;
+		height: 275px;
+	}
+}
+
+.contacts-logo {
+	width: 40px;
+	height: 40px;
+}
+
+.github-logo {
+	width: 30px;
+	height: 30px;
+}
+
+.indeed-logo {
+	width: 50px;
+	height: 30px;
+}
