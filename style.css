@@ -14,6 +14,10 @@ li:hover {
 	padding: 0 70px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container-font {
 	font-family: 'PT Sans Caption', sans-serif;
   	font-size: 55px;
@@ -54,19 +58,6 @@ li:hover {
 	transition: 1s;
 }
 
-@media only screen and (max-width: 500px) {
-	.avatar {
-		width: 22em;
-		height: 22em;
-		margin-top: 2em;
-	}
-
-	.skill-icon {
-		width: 275px;
-		height: 275px;
-	}
-}
-
 .contacts-logo {
 	width: 40px;
 	height: 40px;
@@ -80,4 +71,68 @@ li:hover {
 .indeed-logo {
 	width: 50px;
 	height: 30px;
+}
+
+/*image hover zoom*/
+
+.img-hover-zoom { 
+	height: 300px;/* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom .image {
+	max-width: 100%;
+	height: 500px;
+  	transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  	transform: scale(1.5);
+}
+
+@media only screen and (max-width: 500px) {
+	.avatar {
+		width: 24em;
+		height: 24em;
+		margin-top: 2em;
+		margin-left: 7px;
+	}
+
+	.skill-icon {
+		width: 275px;
+		height: 275px;
+	}
+
+	.img-hover-zoom .image {
+		max-width: 100%;
+		height: 300px;
+	  	transition: transform .5s ease;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.avatar {
+		width: 23.5em;
+		height: 23.5em;
+		margin-top: 2em;
+		margin-left: 7px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.avatar {
+		width: 22em;
+		height: 22em;
+		margin-top: 2em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.avatar {
+		width: 21em;
+		height: 21em;
+		margin-top: 2em;
+	}
 }
