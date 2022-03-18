@@ -155,21 +155,32 @@
   					<img class="github-logo ms-3" src="logo/github-logo.png" href="">
   				</a>
   			</div>
-  			<form class="bg-white p-4 rounded mb-5">
+
+        <!-- FORM -->
+  			<form class="bg-white p-4 rounded mb-5" action="https://formsubmit.co/jencruz.workacc.347@gmail.com" method="POST">
+
+        <!-- Honey Pot -->
+        <input type="text" name="_honey" style="display:none;">
+
+        <!-- Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Success Page -->
+        <input type="hidden" name="_next" value="success.html">
+
 			 	<div class="row mb-3">
 			   		<div class="col-6">
 			   			<label class="form-label" for="email">Email </label>
-			   			<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Your-rockstar-email">
+			   			<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Your-rockstar-email" required>
 			   		</div>
 			   		<div class="col-6">
 			   			<label class="form-label" for="name">Name </label>
-			   			<input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Your-rockstar-name">
+			   			<input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Your-rockstar-name" required>
 			   		</div>
 			 	</div>
 			 	<div class="mb-3">
 			 		<label class="form-label" for="message">Message </label>
-			   		<textarea placeholder="Your-rockstar-message" class="form-control textarea-h" name="message">
-			   		</textarea>
+			   		<textarea placeholder="Your-rockstar-message" class="form-control textarea-h" name="message"></textarea>
 			 	</div>
 			 	<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
