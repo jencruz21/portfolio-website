@@ -134,3 +134,15 @@ a {
 		margin-top: 2em;
 	}
 }
+
+.zoom-box {
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s; 
+}
+
+.zoom-box:hover {
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
