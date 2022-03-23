@@ -90,6 +90,18 @@ a {
   	transform: scale(1.5);
 }
 
+.zoom-box {
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s; 
+}
+
+.zoom-box:hover {
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+
 @media only screen and (max-width: 500px) {
 	.avatar {
 		width: 24em;
@@ -108,6 +120,11 @@ a {
 		height: 300px;
 	  	transition: transform .5s ease;
 	}
+
+	.zoom-box:hover {
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -117,6 +134,11 @@ a {
 		margin-top: 2em;
 		margin-left: 7px;
 	}
+
+	.zoom-box:hover {
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	}
 }
 
 @media only screen and (max-width: 425px) {
@@ -124,6 +146,11 @@ a {
 		width: 22em;
 		height: 22em;
 		margin-top: 2em;
+	}
+
+	.zoom-box:hover {
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
 	}
 }
 
@@ -133,16 +160,9 @@ a {
 		height: 21em;
 		margin-top: 2em;
 	}
-}
 
-.zoom-box {
-	-webkit-transition: -webkit-transform 0.2s;
-	transition: -webkit-transform 0.2s;
-	transition: transform 0.2s;
-	transition: transform 0.2s, -webkit-transform 0.2s; 
-}
-
-.zoom-box:hover {
-	-webkit-transform: scale(1.5);
-	        transform: scale(1.5);
+	.zoom-box:hover {
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	}
 }
