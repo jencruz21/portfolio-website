@@ -166,3 +166,18 @@ a {
 	        transform: scale(1.2);
 	}
 }
+
+.fade-in-transition {
+	animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
