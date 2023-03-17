@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="logo/software-ico.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PVJDJ7K8DP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PVJDJ7K8DP");
+    </script>
+
+    <title>Jorgen Cruz</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light text-secondary fs-5 mb-5 sticky"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseNav"
+          aria-controls="collapseNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-lg-center mt-1"
+          id="collapseNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="index.html#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="index.html#skills">Skills</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="index.html#contactMe">Contact Me</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="work.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="text-center container-font mb-5">Projects</h1>
+      <hr />
+      <div class="col-lg-12">
+        <!-- Contact Tracing System -->
+        <div class="rounded m-5">
+          <div class="row g-0">
+            <div class="col-sm-8">
+              <div class="img-hover-zoom">
+                <img
+                  loading="lazy"
+                  class="image fade-in-transition"
+                  src="project-pics/contact-tracing-system2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="p-3 text-center">Contact Tracing System</h2>
+              <p class="px-5 text-start">
+                The is application that I built for my clients that studies in
+                TIP. Leveraging <strong>python, tkinter framework</strong> and
+                the <strong>sqlite database</strong>, I've built a system that
+                collects the user's data and sort them if they are vaccinated or
+                not vaccinated.
+              </p>
+              <p class="px-5 text-start">
+                ▶
+                <a
+                  href="https://github.com/jencruz21/contact-tracing-system-gui"
+                  >Link of the repo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Face Detection Web App -->
+        <div class="rounded m-5">
+          <div class="row g-0">
+            <div class="col-sm-8">
+              <div class="img-hover-zoom">
+                <img
+                  loading="lazy"
+                  class="image fade-in-transition"
+                  src="project-pics/face-recog-app.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="p-3 text-center">Face Recognition App</h2>
+              <p class="px-5">
+                This is the first project that I've built with the help of
+                udemy. Using the <strong>React, Node, PostgreSQL</strong>and
+                <strong>Clarifai API</strong>, I've successfully build a
+                application that detects faces
+              </p>
+              <p class="px-5 text-start">
+                ▶
+                <a href="https://detect-my-face-app.herokuapp.com/"
+                  >Link of the face recog app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- UITC Concern Management System -->
+        <div class="rounded m-5">
+          <div class="row g-0">
+            <div class="col-sm-8">
+              <div class="img-hover-zoom">
+                <img
+                  loading="lazy"
+                  class="image fade-in-transition"
+                  src="project-pics/uitc-concerns.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="p-3 text-center">UITC Concern management system</h2>
+              <p class="px-5">
+                Using the <strong>React, Node, PostgreSQL</strong>and
+                <strong>Nodemailer</strong>, I've successfully build a
+                application that filter and addresses the concerns of students
+                without relying on Google Forms. A unified system that handle
+                the concerns.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <div class="container text-center fs-4">
+      <p class="p-4">®All rights reserve 2022</p>
+    </div>
+  </body>
+</html>
